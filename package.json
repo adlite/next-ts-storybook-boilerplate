@@ -1,0 +1,34 @@
+{
+  "name": "next-js-boiler",
+  "version": "0.0.1",
+  "description": "Next.js sparkling boiler for all types of projects",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adlite/next-js-boiler.git"
+  },
+  "keywords": [
+    "react",
+    "nextjs",
+    "webpack",
+    "ssr",
+    "boilerplate"
+  ],
+  "author": "Adlite <adlite@yandex.ru> (https://github.com/adlite/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/adlite/next-js-boiler/issues"
+  },
+  "homepage": "https://github.com/adlite/next-js-boiler#readme",
+  "dependencies": {
+    "next": "^9.1.3",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0"
+  }
+}
