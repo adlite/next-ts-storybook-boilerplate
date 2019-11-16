@@ -1,8 +1,15 @@
-const withStylus = require('@zeit/next-stylus');
-const withCSS = require('@zeit/next-css');
+// next.config.js
+const withSass = require('@zeit/next-sass');
 
 const config = {
-  cssModules: true
+  webpack(config, { buildId, dev, isServer, defaultLoaders, webpack }) {
+    return config
+  },
+  cssModules: true,
+  cssLoaderOptions: {
+    localIdentName: '[local]_[hash:base64:5]',
+    localsConvention: 'camelCaseOnly'
+  }
 };
 
-module.exports = withCSS(withStylus(config));
+module.exports = withSass(config);
