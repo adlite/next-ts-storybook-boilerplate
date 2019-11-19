@@ -1,0 +1,129 @@
+// placeholder color
+@mixin placeholder($color) {
+  &::placeholder {
+    color: $color;
+    opacity: 1;
+  }
+}
+
+// font smoothing
+@mixin smoothFont() {
+  -webkit-font-smoothing: antialiased;
+}
+
+// faster transition
+@mixin faster() {
+  transition-duration: ($duration / 2);
+}
+
+// clearfix
+@mixin clearfix() {
+  &:after {
+    display: block;
+    content: '';
+    height: 0;
+    overflow: hidden;
+    clear: both;
+  }
+}
+
+// fullsize
+@mixin fullsize() {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+// font-face
+@mixin webfont($family, $file, $weight: normal, $style: normal) {
+  @font-face {
+    font-family: $family;
+    src: url('/fonts/#{$file}.woff') format('woff'),
+         url('/fonts/#{$file}.woff') format('woff2');
+    font-weight: $weight;
+    font-style: $style;
+  }
+}
+
+// cursor grab
+@mixin cursorGrab() {
+  cursor: move;
+  cursor: grab;
+}
+
+// cursor grabbing
+@mixin cursorGrabbing() {
+  cursor: move;
+  cursor: grabbing;
+}
+
+// disable last margin (helpful for grids)
+@mixin disableLastMargin() {
+  &:last-child {
+    margin-bottom: 0;
+    margin-right: 0;
+  }
+}
+
+@mixin disableLastMarginRight() {
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+@mixin disableLastMarginLeft() {
+  &:last-child {
+    margin-left: 0;
+  }
+}
+
+@mixin disableLastMarginBottom() {
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+@mixin disableLastMargiTop() {
+  &:last-child {
+    margin-top: 0;
+  }
+}
+
+@mixin textOverflow() {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+@mixin imgResponsive() {
+  max-width: 100%;
+  height: auto;
+}
+
+@mixin bg($position: 50% 50%) {
+  background-position: $position;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@mixin link() {
+  color: $linkColor;
+  text-decoration: none;
+  transition: color $duration;
+
+  &:hover {
+    color: $linkHoverColor
+  }
+}
+
+@mixin sub() {
+  vertical-align: sub;
+  font-size: 60%;
+}
+
+@mixin sup() {
+  vertical-align: super;
+  font-size: 60%;
+}
