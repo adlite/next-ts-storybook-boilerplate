@@ -28,6 +28,7 @@
   "homepage": "https://github.com/adlite/next-js-boiler#readme",
   "dependencies": {
     "@zeit/next-sass": "1.0.1",
+    "csso-webpack-plugin": "^1.0.0-beta.12",
     "next": "9.1.3",
     "node-sass": "4.13.0",
     "react": "16.12.0",
