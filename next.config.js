@@ -1,5 +1,6 @@
-// next.config.js
 const withSass = require('@zeit/next-sass');
+
+const IS_DEV = process.env.NODE_ENV === 'development';
 
 const config = {
   webpack(config, { buildId, dev, isServer, defaultLoaders, webpack }) {
@@ -7,9 +8,9 @@ const config = {
   },
   cssModules: true,
   cssLoaderOptions: {
-    localIdentName: '[local]_[hash:base64:5]',
-    localsConvention: 'camelCaseOnly'
-  }
+    localIdentName: IS_DEV ? '[local]_[hash:base64:5]' : '_[hash:base64:6]',
+  },
+  sassLoaderOptions: {}
 };
 
 module.exports = withSass(config);
