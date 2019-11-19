@@ -1,10 +1,15 @@
 /*--------------------------------------------------------------
 # Stylesheets entry point
 --------------------------------------------------------------*/
+// Vendor CSS
 @import 'vendor/normalize.css';
 @import 'vendor/reset.css';
-
+// Global styles, variables, mixins, etc.
 @import 'global/_easings';
 @import 'global/_variables';
 @import 'global/_mixins';
 @import 'global/_document';
+// JSON configurations
+@import 'config/grid.json';
+@import 'config/breakpoints.json';
+@import 'config/colors.json';

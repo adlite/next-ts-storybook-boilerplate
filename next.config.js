@@ -1,7 +1,8 @@
 // Next plugins
 const withSass = require('@zeit/next-sass');
-// Webpack plugins
+// Webpack
 const CssoWebpackPlugin = require('csso-webpack-plugin').default;
+const jsonImporter = require('node-sass-json-importer');
 
 const IS_DEV = process.env.NODE_ENV === 'development';
 
@@ -16,7 +17,9 @@ const config = {
   cssLoaderOptions: {
     localIdentName: IS_DEV ? '[local]_[hash:base64:5]' : '_[hash:base64:6]',
   },
-  sassLoaderOptions: {}
+  sassLoaderOptions: {
+    importer: jsonImporter(),
+  }
 };
 
 module.exports = withSass(config);

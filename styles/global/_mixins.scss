@@ -109,12 +109,12 @@
 }
 
 @mixin link() {
-  color: $linkColor;
+  color: $blackColor;
   text-decoration: none;
   transition: color $duration;
 
   &:hover {
-    color: $linkHoverColor
+    color: $blackColor;
   }
 }
 
