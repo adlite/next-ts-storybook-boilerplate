@@ -1,0 +1,22 @@
+// TODO: add npmjs.com/package/sass-resources-loader
+.container {
+  max-width: $containerMaxWidth;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.column {
+  width: span(1);
+  margin-right: gutter();
+  background-color: gray;
+  outline: 1px solid red;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+

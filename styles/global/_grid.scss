@@ -1,0 +1,18 @@
+/*--------------------------------------------------------------
+# Application grid system
+# Uses Susy 3 (https://www.oddbird.net/susy/docs/)
+--------------------------------------------------------------*/
+@import '~susy/sass/susy';
+
+// Susy config
+$susy: (
+  'columns': susy-repeat($columnsCount),
+  'gutters': #{$gutterSize}px,
+  'spread': $spread,
+  'container-spread': $containerSpread,
+);
+
+// Mixins
+
+
+// Media queries

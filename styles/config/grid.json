@@ -1,1 +1,7 @@
-{}
+{
+  "columnsCount": 12,
+  "gutterSize": 30,
+  "spread": "narrow",
+  "containerSpread": "narrow",
+  "containerMaxWidth": 1020
+}
