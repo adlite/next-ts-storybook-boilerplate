@@ -7,12 +7,22 @@
 // Susy config
 $susy: (
   'columns': susy-repeat($columnsCount),
-  'gutters': #{$gutterSize}px,
+  'gutters': $gutterSize * 1px,
   'spread': $spread,
   'container-spread': $containerSpread,
 );
 
-// Mixins
+// Disable margins helpers
+@mixin disableLastMargin($side) {
+  &:last-child {
+    margin-#{$side}: 0;
+  }
+}
 
+@mixin disableNthMargin($nth, $side) {
+  &:nth-child(#{$nth}) {
+    margin-#{$side}: 0;
+  }
+}
 
 // Media queries

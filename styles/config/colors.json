@@ -1,4 +1,6 @@
 {
-  "whiteColor": "#FFF",
-  "blackColor": "#000"
+  "brandColor": "#09D3AC",
+  "bgColor": "#FFF",
+  "textColor": "#1A1A1A",
+  "secondaryTextColor": "#585858"
 }

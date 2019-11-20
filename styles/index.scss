@@ -1,20 +1,9 @@
 /*--------------------------------------------------------------
 # Stylesheets entry point
 --------------------------------------------------------------*/
-// Vendor CSS
+// Vendor styles
 @import 'vendor/normalize.css';
 @import 'vendor/reset.css';
-// JSON configurations
-@import 'config/grid.json';
-@import 'config/breakpoints.json';
-@import 'config/colors.json';
-// Global styles, variables, mixins, etc.
-@import 'global/_variables';
-@import 'global/_grid';
-@import 'global/_mixins';
-@import 'global/_easings';
-@import 'global/_document';
 
-body {
-  margin-right: #{$containerMaxWidth}px;
-}
+// Global app styles
+@import 'common/_document';

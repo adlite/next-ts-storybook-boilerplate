@@ -1,6 +1,5 @@
-// TODO: add npmjs.com/package/sass-resources-loader
 .container {
-  max-width: $containerMaxWidth;
+  max-width: #{$containerMaxWidth}px;
   margin: 0 auto;
 }
 
@@ -10,13 +9,12 @@
 }
 
 .column {
-  width: span(1);
+  width: span(2);
   margin-right: gutter();
+  margin-bottom: gutter();
   background-color: gray;
   outline: 1px solid red;
-
-  &:last-child {
-    margin-right: 0;
-  }
+  @include disableLastMargin(right);
+  @include disableNthMargin(6n, right);
 }
 

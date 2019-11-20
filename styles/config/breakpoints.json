@@ -1,1 +1,7 @@
-{}
+{
+  "desktop": 1439,
+  "laptop": 1279,
+  "tablet": 1023,
+  "phone": 767,
+  "phoneXs": 321
+}
