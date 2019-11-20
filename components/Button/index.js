@@ -1,10 +1,11 @@
 import React from 'react';
 import style from './style.scss';
 
-const Button = ({ children }) => {
+const Button = ({children}) => {
   return (
-      <button className={style.root}>
-        <span className={style.textSpan}>{children}</span></button>
+    <button className={style.root}>
+      <span className={style.textSpan}>{children}</span>
+    </button>
   );
 };
 

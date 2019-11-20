@@ -31,8 +31,8 @@ const config = {
       'styles/preferences/_mixins',
       'styles/preferences/_easings',
     ]),
-    includePaths: [__dirname]
-  }
+    includePaths: [__dirname],
+  },
 };
 
 module.exports = withSass(config);
