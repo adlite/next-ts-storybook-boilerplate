@@ -1,5 +1,6 @@
+// Vendor
 import React from 'react';
-
+// Internals
 import Button from '../components/Button';
 import Grid from '../components/Grid';
 

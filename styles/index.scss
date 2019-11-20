@@ -1,9 +1,22 @@
 /*--------------------------------------------------------------
-# Stylesheets entry point
+# Global app styles
 --------------------------------------------------------------*/
-// Vendor styles
-@import 'vendor/normalize.css';
-@import 'vendor/reset.css';
+* {
+  box-sizing: border-box;
+}
 
-// Global app styles
-@import 'common/_document';
+html,
+body {
+  height: 100%;
+  background: $bgColor;
+  color: $textColor;
+  font: {
+    weight: normal;
+    size: $fontSize;
+    family: $fontFamily;
+  };
+  line-height: $lineHeight;
+  -webkit-text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  @include smoothFont;
+}
