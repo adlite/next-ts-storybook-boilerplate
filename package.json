@@ -26,12 +26,21 @@
     "url": "https://github.com/adlite/next-js-boiler/issues"
   },
   "homepage": "https://github.com/adlite/next-js-boiler#readme",
+  "lint-staged": {
+    "*.{js,jsx,json,css,scss}": [
+      "prettier --config prettier.config.js --write",
+      "git add -A"
+    ]
+  },
   "dependencies": {
     "@zeit/next-sass": "1.0.1",
     "csso-webpack-plugin": "^1.0.0-beta.12",
+    "husky": "^3.1.0",
+    "lint-staged": "^9.4.3",
     "next": "9.1.3",
     "node-sass": "4.13.0",
     "node-sass-json-importer": "^4.1.0",
+    "prettier": "^1.19.1",
     "react": "16.12.0",
     "react-dom": "16.12.0",
     "susy": "^3.0.5"
