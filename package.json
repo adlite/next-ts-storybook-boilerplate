@@ -7,7 +7,9 @@
     "test": "jest",
     "dev": "next",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "precommit": "lint-staged",
+    "prettier": "prettier --write \"./**/*.{js,jsx,json,css,scss}\""
   },
   "repository": {
     "type": "git",
@@ -27,8 +29,8 @@
   },
   "homepage": "https://github.com/adlite/next-js-boiler#readme",
   "lint-staged": {
-    "*.{js,jsx,json,css,scss}": [
-      "prettier --config prettier.config.js --write",
+    "*": [
+      "npm run prettier",
       "git add -A"
     ]
   },
