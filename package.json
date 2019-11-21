@@ -8,7 +8,6 @@
     "dev": "next",
     "build": "next build",
     "start": "next start",
-    "precommit": "lint-staged",
     "prettier": "prettier --write \"./**/*.{js,jsx,json,css,scss}\""
   },
   "repository": {
@@ -33,6 +32,11 @@
       "npm run prettier",
       "git add -A"
     ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
   },
   "dependencies": {
     "@zeit/next-sass": "1.0.1",

@@ -4,4 +4,12 @@ module.exports = {
   trailingComma: 'all',
   jsxBracketSameLine: true,
   bracketSpacing: false,
+  tabWidth: 2,
+  semi: true,
+  overrides: [
+    {
+      files: '.prettierignore',
+      options: {parser: 'markdown'},
+    },
+  ],
 };
