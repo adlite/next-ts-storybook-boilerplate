@@ -6,10 +6,4 @@ module.exports = {
   bracketSpacing: false,
   tabWidth: 2,
   semi: true,
-  overrides: [
-    {
-      files: '.prettierignore',
-      options: {parser: 'markdown'},
-    },
-  ],
 };
