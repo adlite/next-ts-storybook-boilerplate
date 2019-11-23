@@ -1,3 +1,8 @@
+/**
+ * ESLint config
+ * @see https://eslint.org/
+ * @see https://eslint.org/docs/rules/
+ */
 module.exports = {
   env: {
     browser: true,
