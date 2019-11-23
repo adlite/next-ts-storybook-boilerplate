@@ -1,6 +1,5 @@
-# Strange prettier behavior during pre-commit hooks (see https://github.com/prettier/prettier/issues/6101)
+# This file (see https://github.com/prettier/prettier/issues/6101)
 .prettierignore
-.eslintignore
 
 # Logs
 logs
@@ -37,7 +36,7 @@ bower_components
 build/Release
 
 # Dependency directories
-node_modules/
+/node_modules/
 jspm_packages/
 
 # TypeScript v1 declaration files
