@@ -2,9 +2,9 @@
 import React from 'react';
 import NextApp from 'next/app';
 // Internals
-import '../styles/vendor/normalize.scss';
-import '../styles/vendor/reset.scss';
-import '../styles/index.scss';
+import 'styles/vendor/normalize.scss';
+import 'styles/vendor/reset.scss';
+import 'styles/index.scss';
 
 class App extends NextApp {
   // Only uncomment this method if you have blocking data requirements for

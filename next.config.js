@@ -1,3 +1,4 @@
+const path = require('path');
 // Next plugins
 const withSass = require('@zeit/next-sass');
 // Webpack
@@ -14,6 +15,18 @@ const config = {
     if (!IS_DEV) {
       config.plugins.push(new CssoWebpackPlugin());
     }
+    // Aliases for paths to app directories
+    config.resolve.alias = {
+      ...config.resolve.alias,
+      assets: path.resolve(__dirname, 'assets'),
+      classes: path.resolve(__dirname, 'classes'),
+      components: path.resolve(__dirname, 'components'),
+      hocs: path.resolve(__dirname, 'hocs'),
+      sections: path.resolve(__dirname, 'sections'),
+      state: path.resolve(__dirname, 'state'),
+      styles: path.resolve(__dirname, 'styles'),
+      utils: path.resolve(__dirname, 'utils'),
+    };
     return config;
   },
   cssModules: true,
