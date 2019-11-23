@@ -30,6 +30,9 @@
   },
   "homepage": "https://github.com/adlite/next-js-boiler#readme",
   "lint-staged": {
+    "./**/*.{js,jsx}": [
+      "eslint --fix"
+    ],
     "*": [
       "npm run prettier",
       "git add -A"
@@ -52,6 +55,7 @@
     "node-sass": "4.13.0",
     "node-sass-json-importer": "^4.1.0",
     "prettier": "^1.19.1",
+    "prop-types": "^15.7.2",
     "react": "16.12.0",
     "react-dom": "16.12.0",
     "susy": "^3.0.5"

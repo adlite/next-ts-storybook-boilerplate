@@ -1,4 +1,4 @@
-# This file (see https://github.com/prettier/prettier/issues/6101)
+# Strange prettier behavior during pre-commit hooks (see https://github.com/prettier/prettier/issues/6101)
 .prettierignore
 
 # Logs
