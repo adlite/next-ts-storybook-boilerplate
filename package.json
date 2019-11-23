@@ -29,18 +29,9 @@
     "url": "https://github.com/adlite/next-js-boiler/issues"
   },
   "homepage": "https://github.com/adlite/next-js-boiler#readme",
-  "lint-staged": {
-    "./**/*.{js,jsx}": [
-      "eslint --fix"
-    ],
-    "*": [
-      "npm run prettier",
-      "git add -A"
-    ]
-  },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged"
+      "pre-commit": "npm run prettier && npm run lint:fix && git add -A"
     }
   },
   "dependencies": {
