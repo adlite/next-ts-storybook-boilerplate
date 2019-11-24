@@ -5,10 +5,13 @@ const withSass = require('@zeit/next-sass');
 const CssoWebpackPlugin = require('csso-webpack-plugin').default;
 const jsonImporter = require('node-sass-json-importer');
 // Internals
-const scssImportChain = require('./utils/scssImportChain');
+const getDotenvConfig = require('./utils/buildtime/getDotenvConfig');
+const scssImportChain = require('./utils/buildtime/scssImportChain');
 
+// Constants
 const IS_DEV = process.env.NODE_ENV === 'development';
 
+// Next config
 const config = {
   webpack(config) {
     // CSS optimizations
@@ -46,6 +49,7 @@ const config = {
     ]),
     includePaths: [__dirname],
   },
+  env: getDotenvConfig(),
 };
 
 module.exports = withSass(config);

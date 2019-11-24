@@ -9,6 +9,7 @@ const Home = () => {
     <div>
       <h1>Welcome to Next.js!</h1>
       <Button>Click me!</Button>
+      <p>APP_MAGIC_API_KEY: {process.env.APP_MAGIC_API_KEY}</p>
       <Grid />
     </div>
   );
