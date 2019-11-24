@@ -3,21 +3,55 @@ const path = require('path');
 const withSass = require('@zeit/next-sass');
 // Webpack
 const CssoWebpackPlugin = require('csso-webpack-plugin').default;
+const ImageminWebpackPlugin = require('imagemin-webpack-plugin').default;
 const jsonImporter = require('node-sass-json-importer');
 // Internals
-const getDotenvConfig = require('./utils/buildtime/getDotenvConfig');
-const scssImportChain = require('./utils/buildtime/scssImportChain');
+const getDotenvConfig = require('./webpack/utils/getDotenvConfig');
+const scssImportChain = require('./webpack/utils/scssImportChain');
+const imageminConfig = require('./webpack/configs/imagemin');
+const svgoConfig = require('./webpack/configs/svgo');
 
 // Constants
 const IS_DEV = process.env.NODE_ENV === 'development';
 
 // Next config
 const config = {
-  webpack(config) {
-    // CSS optimizations
+  webpack(config, {isServer, defaultLoaders}) {
+    // File loading
+    config.module.rules.push({
+      test: /\.(eot|woff|woff2|ttf|svg|png|jpe?g|gif)$/i,
+      exclude: path.resolve(__dirname, 'assets', 'icons'),
+      loader: 'file-loader',
+      options: {
+        name: () => (IS_DEV ? '[path][name].[hash].[ext]' : '[hash].[ext]'),
+        publicPath: '/_next/static',
+        outputPath: 'static',
+        emitFile: !isServer,
+      },
+    });
+
+    config.module.rules.push({
+      test: /\.svg$/,
+      include: path.resolve(__dirname, 'assets', 'icons'),
+      use: [
+        defaultLoaders.babel,
+        {
+          loader: 'react-svg-loader',
+          options: {
+            jsx: true, // true outputs JSX tags
+            svgo: svgoConfig,
+          },
+        },
+      ],
+    });
+
     if (!IS_DEV) {
+      // CSS optimizations
       config.plugins.push(new CssoWebpackPlugin());
+      // Images compression and optimizations
+      config.plugins.push(new ImageminWebpackPlugin(imageminConfig));
     }
+
     // Aliases for paths to app directories
     config.resolve.alias = {
       ...config.resolve.alias,
@@ -30,6 +64,7 @@ const config = {
       styles: path.resolve(__dirname, 'styles'),
       utils: path.resolve(__dirname, 'utils'),
     };
+
     return config;
   },
   cssModules: true,
