@@ -1,7 +1,0 @@
-{
-  "presets": [
-    "@babel/plugin-proposal-decorators",
-    "next/babel"
-  ],
-  "plugins": []
-}
