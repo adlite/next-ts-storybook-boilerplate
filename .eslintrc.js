@@ -4,6 +4,7 @@
  * @see https://eslint.org/docs/rules/
  */
 module.exports = {
+  parser: 'babel-eslint',
   env: {
     browser: true,
     es6: true,
@@ -25,7 +26,7 @@ module.exports = {
   rules: {
     'import/order': 2,
     'import/first': 2,
-    'import/exports-last': 2,
+    'import/exports-last': 0,
     'import/no-duplicates': 2,
     'import/default': 2,
     'import/newline-after-import': 2,
