@@ -22,7 +22,7 @@ module.exports = {
     ecmaVersion: 2018,
     sourceType: 'module',
   },
-  plugins: ['react', 'import'],
+  plugins: ['babel', 'react', 'import'],
   rules: {
     'import/order': 2,
     'import/first': 2,
