@@ -37,12 +37,13 @@
 }
 
 // font-face
-@mixin webfont($family, $file, $weight: normal, $style: normal) {
+@mixin webfont($family, $path, $weight: normal, $style: normal) {
   @font-face {
     font-family: $family;
-    src: url('assets/fonts/#{$file}.woff') format('woff'), url('assets/fonts/#{$file}.woff') format('woff2');
     font-weight: $weight;
     font-style: $style;
+    font-display: swap;
+    src: local($family), url($path) format('woff'), url($path) format('woff2');
   }
 }
 
