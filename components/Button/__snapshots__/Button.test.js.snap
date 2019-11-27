@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Renders Button correctly 1`] = `
+<button
+  className="root"
+>
+  <span
+    className="textSpan"
+  >
+    Click me
+  </span>
+</button>
+`;
