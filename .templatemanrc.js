@@ -19,6 +19,10 @@ module.exports = {
           from: './templates/export-module.js.tm',
           to: './components/${TM:COMPONENT_NAME}/index.js',
         },
+        {
+          from: './templates/react-test-spec.js.tm',
+          to: './components/${TM:COMPONENT_NAME}/${TM:COMPONENT_NAME}.test.js',
+        },
       ],
     },
     {
@@ -36,6 +40,10 @@ module.exports = {
           from: './templates/export-module.js.tm',
           to: './components/${TM:COMPONENT_NAME}/index.js',
         },
+        {
+          from: './templates/react-test-spec.js.tm',
+          to: './components/${TM:COMPONENT_NAME}/${TM:COMPONENT_NAME}.test.js',
+        },
       ],
     },
     {
@@ -52,6 +60,10 @@ module.exports = {
         {
           from: './templates/export-module.js.tm',
           to: './components/${TM:COMPONENT_NAME}/index.js',
+        },
+        {
+          from: './templates/react-test-spec.js.tm',
+          to: './components/${TM:COMPONENT_NAME}/${TM:COMPONENT_NAME}.test.js',
         },
       ],
     },
@@ -90,6 +102,13 @@ module.exports = {
       files: {
         from: './templates/react-connected-class.js.tm',
         to: './components/${TM:PARENT_COMPONENT_NAME}/${TM:COMPONENT_NAME}.js',
+      },
+    },
+    {
+      name: 'React Test Spec',
+      files: {
+        from: './templates/react-test-spec.js.tm',
+        to: './components/${TM:PARENT_COMPONENT_NAME}/${TM:COMPONENT_NAME}.test.js',
       },
     },
   ],
