@@ -21,7 +21,7 @@ exports[`Renders Section correctly 1`] = `
       className="Container"
     >
       <h2
-        className="root heading2 hasMargin"
+        className="Typography heading2 hasMargin"
       >
         Section 1
       </h2>
@@ -37,7 +37,7 @@ exports[`Renders Section correctly 1`] = `
       className="Container"
     >
       <h2
-        className="root heading2 hasMargin"
+        className="Typography heading2 hasMargin"
       >
         Section 2
       </h2>
@@ -53,7 +53,7 @@ exports[`Renders Section correctly 1`] = `
       className="Container"
     >
       <h2
-        className="root heading2 hasMargin"
+        className="Typography heading2 hasMargin"
       >
         Section without paddings
       </h2>

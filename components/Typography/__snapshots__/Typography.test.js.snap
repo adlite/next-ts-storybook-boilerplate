@@ -3,47 +3,47 @@
 exports[`Renders Typography correctly 1`] = `
 <div>
   <h1
-    className="root heading1 hasMargin"
+    className="Typography heading1 hasMargin"
   >
     Text
   </h1>
   <h2
-    className="root heading2 hasMargin"
+    className="Typography heading2 hasMargin"
   >
     Text
   </h2>
   <h3
-    className="root heading3 hasMargin"
+    className="Typography heading3 hasMargin"
   >
     Text
   </h3>
   <h4
-    className="root heading4 hasMargin"
+    className="Typography heading4 hasMargin"
   >
     Text
   </h4>
   <h5
-    className="root heading5 hasMargin"
+    className="Typography heading5 hasMargin"
   >
     Text
   </h5>
   <h6
-    className="root heading6 hasMargin"
+    className="Typography heading6 hasMargin"
   >
     Text
   </h6>
   <h6
-    className="root heading6 hasMargin secondary"
+    className="Typography heading6 hasMargin secondary"
   >
     Text
   </h6>
   <p
-    className="root paragraph hasMargin"
+    className="Typography paragraph hasMargin"
   >
     Text
   </p>
   <p
-    className="root paragraph zeroLineHeight"
+    className="Typography paragraph zeroLineHeight"
   >
     Text
   </p>

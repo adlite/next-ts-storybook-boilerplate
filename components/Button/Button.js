@@ -45,7 +45,7 @@ const Button = ({className, children, href, isLoading, icon, iconSize, ...props}
 Button.defaultProps = {
   href: '',
   isLoading: false,
-  icon: null,
+  icon: '',
   iconSize: defaultIconSize,
   className: '',
 };
@@ -54,7 +54,7 @@ Button.propTypes = {
   children: PropTypes.node.isRequired,
   href: PropTypes.oneOfType([PropTypes.string, PropTypes.object]),
   isLoading: PropTypes.bool,
-  icon: PropTypes.object,
+  icon: PropTypes.oneOfType([PropTypes.string, PropTypes.elementType]),
   iconSize: PropTypes.number,
   className: PropTypes.string,
 };

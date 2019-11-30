@@ -1,0 +1,97 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Renders Button correctly 1`] = `
+<ul>
+  <li>
+    <button
+      className="Button"
+    >
+      <span
+        className="content"
+      >
+        
+        <span>
+          Click me
+        </span>
+      </span>
+    </button>
+  </li>
+  <li>
+    <button
+      className="Button loading"
+    >
+      <span
+        className="loaderBox"
+      >
+        <test-file-stub
+          height={25}
+          width={25}
+        />
+      </span>
+      <span
+        className="content"
+      >
+        
+        <span>
+          Click me
+        </span>
+      </span>
+    </button>
+  </li>
+  <li>
+    <a
+      className="Button link"
+      href="//ya.ru"
+      rel="nofollow noopener"
+      target="_blank"
+    >
+      <span
+        className="content"
+      >
+        
+        <span>
+          Link button
+        </span>
+      </span>
+    </a>
+  </li>
+  <li>
+    <button
+      className="Button hasIcon"
+      targetBlank={true}
+    >
+      <span
+        className="content"
+      >
+        <test-file-stub
+          className="icon"
+          height={25}
+          width={25}
+        />
+        <span>
+          With icon
+        </span>
+      </span>
+    </button>
+  </li>
+  <li>
+    <button
+      className="Button hasIcon"
+      targetBlank={true}
+    >
+      <span
+        className="content"
+      >
+        <test-file-stub
+          className="icon"
+          height={40}
+          width={40}
+        />
+        <span>
+          With custom sized icon
+        </span>
+      </span>
+    </button>
+  </li>
+</ul>
+`;
