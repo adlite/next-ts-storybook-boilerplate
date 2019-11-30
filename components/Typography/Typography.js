@@ -41,7 +41,7 @@ const Typography = ({
 }) => {
   const TagName = tagName ? tagName : getTagNameFromVariant(variant);
   const classes = cn({
-    [style.root]: true,
+    [style.Typography]: true,
     [style[variant]]: variant,
     [style.uppercase]: uppercase,
     [style.hasMargin]: hasMargin,

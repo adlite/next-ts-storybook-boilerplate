@@ -2,7 +2,7 @@
 
 ## Basic components
 - +Link
-- Button
+- +Button
 - +Typography
 - +Container
 - +Section
