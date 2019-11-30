@@ -1,0 +1,60 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Renders Link correctly 1`] = `
+<ul>
+  <li>
+    <a
+      className="active"
+      href="/"
+      onClick={[Function]}
+      onMouseEnter={[Function]}
+    >
+      Main page
+    </a>
+  </li>
+  <li>
+    <a
+      className=""
+      href="/about"
+      onClick={[Function]}
+      onMouseEnter={[Function]}
+    >
+      About
+    </a>
+  </li>
+  <li>
+    <a
+      className=""
+      href="//ya.ru"
+    >
+      External
+    </a>
+  </li>
+  <li>
+    <a
+      className=""
+      href="//ya.ru"
+      rel="nofollow noopener"
+      target="_blank"
+    >
+      External with targetBlank
+    </a>
+  </li>
+  <li>
+    <a
+      className=""
+      href="tel://+79993335544"
+    >
+      Call me
+    </a>
+  </li>
+  <li>
+    <a
+      className=""
+      href="mailto://adlite@yandex.ru"
+    >
+      Send me email
+    </a>
+  </li>
+</ul>
+`;

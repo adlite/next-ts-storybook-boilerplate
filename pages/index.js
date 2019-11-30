@@ -3,10 +3,43 @@ import React from 'react';
 // Internals
 import Typography from 'components/Typography';
 import Section from 'components/Section';
+import Link from 'components/Link';
 
 const Home = () => {
   return (
     <React.Fragment>
+      <Section title="Links list" color="brand">
+        <ul>
+          <li>
+            <Link href="/" activeClassName="active">
+              Main page
+            </Link>
+          </li>
+          <li>
+            <Link href="/about" activeClassName="active">
+              About
+            </Link>
+          </li>
+          <li>
+            <Link href="//ya.ru">External</Link>
+          </li>
+          <li>
+            <Link href="//ya.ru" targetBlank>
+              External with targetBlank
+            </Link>
+          </li>
+          <li>
+            <Link href="+79993335544" protocol="tel">
+              Call me
+            </Link>
+          </li>
+          <li>
+            <Link href="adlite@yandex.ru" protocol="mailto">
+              Send me email
+            </Link>
+          </li>
+        </ul>
+      </Section>
       <Section title="Section 1">
         <Typography variant="paragraph">
           Contrary to&nbsp;popular belief, Lorem Ipsum is&nbsp;not simply random text. It&nbsp;has roots
