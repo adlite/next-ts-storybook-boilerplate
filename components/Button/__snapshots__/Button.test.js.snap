@@ -2,7 +2,7 @@
 
 exports[`Renders Button correctly 1`] = `
 <button
-  className="root"
+  className="Button"
 >
   <span
     className="textSpan"

@@ -4,7 +4,7 @@ import style from './style.scss';
 
 const Button = ({children}) => {
   return (
-    <button className={style.root}>
+    <button className={style.Button}>
       <span className={style.textSpan}>{children}</span>
     </button>
   );

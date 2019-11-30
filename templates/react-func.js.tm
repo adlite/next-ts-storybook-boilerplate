@@ -7,7 +7,7 @@ import style from './style.scss';
 
 const ${TM:COMPONENT_NAME} = ({className}) => {
   return (
-    <div className={cn(style.root, className)}>
+    <div className={cn(style.${TM:COMPONENT_NAME}, className)}>
       ${TM:COMPONENT_NAME} component
     </div>
   );

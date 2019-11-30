@@ -1,1 +1,1 @@
-.root {}
+.${TM:COMPONENT_NAME} {}

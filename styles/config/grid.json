@@ -3,5 +3,6 @@
   "gutterSize": 15,
   "spread": "narrow",
   "containerSpread": "narrow",
-  "containerMaxWidth": 1020
+  "containerMaxWidth": 1280,
+  "containerMinWidth": 320
 }
