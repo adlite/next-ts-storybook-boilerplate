@@ -3,9 +3,9 @@
 ## Basic components
 - Link
 - Button
-- Typography
-- Container
-- Section
+- +Typography
+- +Container
+- +Section
 - NavLink
 - Header
 - Footer

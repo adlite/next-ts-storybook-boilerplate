@@ -1,0 +1,20 @@
+.Section {
+  padding: 0;
+}
+
+.hasPaddings {
+  padding: 60px 0;
+}
+
+.transparent {
+  background-color: transparent;
+}
+
+.bg {
+  background-color: $bgColor;
+}
+
+.brand {
+  background-color: $brandColor;
+  color: white;
+}

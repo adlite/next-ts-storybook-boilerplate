@@ -18,5 +18,13 @@ module.exports = {
     '\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$':
       '<rootDir>/tests/mocks/fileMock.js',
     '\\.(css|scss)$': 'identity-obj-proxy',
+    '^assets(.*)$': '<rootDir>/assets$1',
+    '^classes(.*)$': '<rootDir>/classes$1',
+    '^components(.*)$': '<rootDir>/components$1',
+    '^hocs(.*)$': '<rootDir>/hocs$1',
+    '^sections(.*)$': '<rootDir>/sections$1',
+    '^state(.*)$': '<rootDir>/state$1',
+    '^styles(.*)$': '<rootDir>/styles$1',
+    '^utils(.*)$': '<rootDir>/utils$1',
   },
 };
