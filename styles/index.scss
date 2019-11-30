@@ -27,3 +27,18 @@ body {
   -moz-osx-font-smoothing: grayscale;
   @include smoothFont;
 }
+
+a {
+  &,
+  &:hover,
+  &:active,
+  &:visited {
+    color: $linkColor;
+    text-decoration: none;
+  }
+
+  &:active,
+  &:hover {
+    color: $linkColorActive;
+  }
+}

@@ -1,7 +1,7 @@
 # Next.js 9 boilerplate
 
 ## Basic components
-- Link
+- +Link
 - Button
 - +Typography
 - +Container
