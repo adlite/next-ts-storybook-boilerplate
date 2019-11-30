@@ -77,16 +77,6 @@
   background-size: cover;
 }
 
-@mixin link {
-  color: $blackColor;
-  text-decoration: none;
-  transition: color $duration;
-
-  &:hover {
-    color: $blackColor;
-  }
-}
-
 @mixin sub {
   vertical-align: sub;
   font-size: 60%;
@@ -129,4 +119,19 @@
 
 @mixin paragraph($hasMargin: false) {
   @include typography($fontSize, $regular, $hasMargin);
+}
+
+@mixin link($color, $activeColor) {
+  &,
+  &:hover,
+  &:active,
+  &:visited {
+    color: $color;
+    text-decoration: none;
+  }
+
+  &:active,
+  &:hover {
+    color: $activeColor;
+  }
 }

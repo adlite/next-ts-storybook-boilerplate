@@ -1,0 +1,47 @@
+.Button {
+  display: inline-block;
+  position: relative;
+  padding: 10px 15px;
+  background-color: $brandColor;
+  color: white;
+  outline: none;
+  text-align: center;
+  border: none;
+  line-height: $lineHeight;
+  cursor: pointer;
+  transition: background-color $duration;
+
+  &:hover {
+    background-color: $brandColorDark;
+  }
+}
+
+.link {
+  @include link(white, white);
+}
+
+.loading {
+  cursor: default;
+
+  .content {
+    visibility: hidden;
+  }
+}
+
+.hasIcon {
+  .content {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.loaderBox {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  @include fullsize;
+}
+
+.icon {
+  margin-right: 5px;
+}

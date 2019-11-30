@@ -1,8 +1,10 @@
 // Vendor
 import React from 'react';
 // Internals
+import CheckIcon from 'assets/icons/check.svg';
 import Typography from 'components/Typography';
 import Section from 'components/Section';
+import Button from 'components/Button';
 import Link from 'components/Link';
 
 const Home = () => {
@@ -37,6 +39,41 @@ const Home = () => {
             <Link href="adlite@yandex.ru" protocol="mailto">
               Send me email
             </Link>
+          </li>
+        </ul>
+      </Section>
+      <Section title="Buttons">
+        <ul>
+          <li>
+            <Button>Click me</Button>
+            <br />
+            <br />
+          </li>
+          <li>
+            <Button isLoading>Click me</Button>
+            <br />
+            <br />
+          </li>
+          <li>
+            <Button href="//ya.ru" targetBlank>
+              Link button
+            </Button>
+            <br />
+            <br />
+          </li>
+          <li>
+            <Button href="//ya.ru" icon={CheckIcon} targetBlank>
+              With icon
+            </Button>
+            <br />
+            <br />
+          </li>
+          <li>
+            <Button href="//ya.ru" icon={CheckIcon} iconSize={40} targetBlank>
+              With custom sized icon
+            </Button>
+            <br />
+            <br />
           </li>
         </ul>
       </Section>

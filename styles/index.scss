@@ -29,16 +29,5 @@ body {
 }
 
 a {
-  &,
-  &:hover,
-  &:active,
-  &:visited {
-    color: $linkColor;
-    text-decoration: none;
-  }
-
-  &:active,
-  &:hover {
-    color: $linkColorActive;
-  }
+  @include link($linkColor, $linkColorActive);
 }
