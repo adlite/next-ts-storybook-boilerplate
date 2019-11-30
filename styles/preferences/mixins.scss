@@ -1,4 +1,4 @@
-// placeholder color
+// Placeholder color
 @mixin placeholder($color) {
   &::placeholder {
     color: $color;
@@ -6,17 +6,17 @@
   }
 }
 
-// font smoothing
+// Font smoothing
 @mixin smoothFont {
   -webkit-font-smoothing: antialiased;
 }
 
-// faster transition
+// Faster transition
 @mixin faster {
   transition-duration: ($duration / 2);
 }
 
-// clearfix
+// Clearfix
 @mixin clearfix {
   &:after {
     display: block;
@@ -27,7 +27,7 @@
   }
 }
 
-// fullsize
+// Fullsize
 @mixin fullsize {
   position: absolute;
   left: 0;
@@ -36,7 +36,7 @@
   height: 100%;
 }
 
-// font-face
+// Font-face
 @mixin webfont($family, $path, $weight: normal, $style: normal) {
   @font-face {
     font-family: $family;
@@ -47,19 +47,19 @@
   }
 }
 
-// cursor grab
+// Cursor grab
 @mixin cursorGrab {
   cursor: move;
   cursor: grab;
 }
 
-// cursor grabbing
+// Cursor grabbing
 @mixin cursorGrabbing {
   cursor: move;
   cursor: grabbing;
 }
 
-// utils
+// Utils
 @mixin textOverflow {
   overflow: hidden;
   white-space: nowrap;
@@ -95,4 +95,38 @@
 @mixin sup {
   vertical-align: super;
   font-size: 60%;
+}
+
+// Typography
+@mixin addTextMargin($margin: 16px) {
+  margin-bottom: $margin;
+}
+
+@mixin typography($size, $fontWeight: normal, $hasMargin: false) {
+  font-size: $size;
+  font-weight: $fontWeight;
+
+  @if $hasMargin {
+    @include addTextMargin();
+  }
+}
+
+@mixin h1($hasMargin: false) {
+  @include typography($fontSize + 20px, $extraBold, $hasMargin);
+}
+
+@mixin h2($hasMargin: false) {
+  @include typography($fontSize + 16px, $bold, $hasMargin);
+}
+
+@mixin h3($hasMargin: false) {
+  @include typography($fontSize + 8px, $bold, $hasMargin);
+}
+
+@mixin h4($hasMargin: false) {
+  @include typography($fontSize + 2px, $bold, $hasMargin);
+}
+
+@mixin paragraph($hasMargin: false) {
+  @include typography($fontSize, $regular, $hasMargin);
 }
