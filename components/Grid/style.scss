@@ -17,3 +17,7 @@
   @include disableLastMargin(right);
   @include disableNthMargin(6n, right);
 }
+
+.input {
+  @include placeholder(red);
+}
