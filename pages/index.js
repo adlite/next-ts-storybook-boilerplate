@@ -1,13 +1,16 @@
 // Vendor
 import React from 'react';
+import PropTypes from 'prop-types';
+import {connect} from 'react-redux';
 // Internals
 import CheckIcon from 'assets/icons/check.svg';
 import Typography from 'components/Typography';
 import Section from 'components/Section';
 import Button from 'components/Button';
 import Link from 'components/Link';
+import {incrementCount} from 'store';
 
-const Home = () => {
+const Home = ({dispatch, count}) => {
   return (
     <React.Fragment>
       <Section title="Links list" color="brand">
@@ -44,6 +47,11 @@ const Home = () => {
       </Section>
       <Section title="Buttons">
         <ul>
+          <li>
+            <Button onClick={() => dispatch(incrementCount())}>Count with Redux ({count})</Button>
+            <br />
+            <br />
+          </li>
           <li>
             <Button>Click me</Button>
             <br />
@@ -132,4 +140,9 @@ const Home = () => {
   );
 };
 
-export default Home;
+Home.propTypes = {
+  dispatch: PropTypes.func,
+  count: PropTypes.number,
+};
+
+export default connect(state => ({count: state.count}))(Home);

@@ -1,7 +1,10 @@
 // Vendor
 import React from 'react';
 import NextApp from 'next/app';
+import {Provider} from 'react-redux';
 // Internals
+import {withReduxStore} from 'hocs';
+// Styles
 import 'styles/vendor/normalize.scss';
 import 'styles/vendor/reset.scss';
 import 'styles/index.scss';
@@ -20,9 +23,13 @@ class App extends NextApp {
   // }
 
   render() {
-    const {Component, pageProps} = this.props;
-    return <Component {...pageProps} />;
+    const {Component, pageProps, reduxStore} = this.props;
+    return (
+      <Provider store={reduxStore}>
+        <Component {...pageProps} />
+      </Provider>
+    );
   }
 }
 
-export default App;
+export default withReduxStore(App);

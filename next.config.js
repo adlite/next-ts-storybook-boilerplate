@@ -6,13 +6,11 @@ const CssoWebpackPlugin = require('csso-webpack-plugin').default;
 const ImageminWebpackPlugin = require('imagemin-webpack-plugin').default;
 const jsonImporter = require('node-sass-json-importer');
 // Internals
+const {IS_DEV} = require('./webpack/utils/constants');
 const getDotenvConfig = require('./webpack/utils/getDotenvConfig');
 const scssImportChain = require('./webpack/utils/scssImportChain');
 const imageminConfig = require('./webpack/configs/imagemin');
 const svgoConfig = require('./webpack/configs/svgo');
-
-// Constants
-const IS_DEV = process.env.NODE_ENV === 'development';
 
 // Next config
 const config = {
@@ -60,7 +58,7 @@ const config = {
       components: path.resolve(__dirname, 'components'),
       hocs: path.resolve(__dirname, 'hocs'),
       sections: path.resolve(__dirname, 'sections'),
-      state: path.resolve(__dirname, 'state'),
+      store: path.resolve(__dirname, 'store'),
       styles: path.resolve(__dirname, 'styles'),
       utils: path.resolve(__dirname, 'utils'),
     };
