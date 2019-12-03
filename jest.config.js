@@ -23,7 +23,7 @@ module.exports = {
     '^components(.*)$': '<rootDir>/components$1',
     '^hocs(.*)$': '<rootDir>/hocs$1',
     '^sections(.*)$': '<rootDir>/sections$1',
-    '^state(.*)$': '<rootDir>/state$1',
+    '^store(.*)$': '<rootDir>/store$1',
     '^styles(.*)$': '<rootDir>/styles$1',
     '^utils(.*)$': '<rootDir>/utils$1',
   },

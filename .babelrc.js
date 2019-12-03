@@ -9,7 +9,7 @@ module.exports = {
     [
       '@babel/plugin-proposal-decorators',
       {
-        decoratorsBeforeExport: true,
+        legacy: true,
       },
     ],
   ],

@@ -9,6 +9,7 @@ import 'styles/vendor/normalize.scss';
 import 'styles/vendor/reset.scss';
 import 'styles/index.scss';
 
+@withReduxStore
 class App extends NextApp {
   // Only uncomment this method if you have blocking data requirements for
   // every single page in your application. This disables the ability to
@@ -32,4 +33,4 @@ class App extends NextApp {
   }
 }
 
-export default withReduxStore(App);
+export default App;

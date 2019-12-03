@@ -80,7 +80,7 @@ module.exports = {
       name: 'Redux Duck Module',
       files: {
         from: './templates/redux-duck.js.tm',
-        to: './state/modules/${TM:DUCK_NAME}.js',
+        to: './store/modules/${TM:DUCK_NAME}.js',
       },
     },
     {

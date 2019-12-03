@@ -4,7 +4,7 @@ import {connect} from 'react-redux';
 import PropTypes from 'prop-types';
 import cn from 'classnames';
 // Internals
-import * as ${TM:DUCK_NAME}Module from 'state/modules/${TM:DUCK_NAME}';
+import * as ${TM:DUCK_NAME}Module from 'store/modules/${TM:DUCK_NAME}';
 import style from './style.scss';
 
 @connect(({${TM:DUCK_NAME}}) => ({
