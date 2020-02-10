@@ -44,25 +44,25 @@ class Home extends React.PureComponent {
             </li>
             <li>
               <Link href="/about" activeClassName="active">
-                About
+                Internal page
               </Link>
             </li>
             <li>
-              <Link href="//ya.ru">External</Link>
+              <Link href="//example.com">External link</Link>
             </li>
             <li>
-              <Link href="//ya.ru" targetBlank>
-                External with targetBlank
+              <Link href="//example.com" targetBlank>
+                External link with targetBlank
               </Link>
             </li>
             <li>
               <Link href="+79993335544" protocol="tel">
-                Call me
+                Call
               </Link>
             </li>
             <li>
               <Link href="adlite@yandex.ru" protocol="mailto">
-                Send me email
+                Send email
               </Link>
             </li>
           </ul>
@@ -70,7 +70,7 @@ class Home extends React.PureComponent {
         <Section title="Buttons">
           <ul>
             <li>
-              <Button>Click me</Button>
+              <Button>Simple button</Button>
               <br />
               <br />
             </li>
@@ -80,21 +80,21 @@ class Home extends React.PureComponent {
               <br />
             </li>
             <li>
-              <Button href="//ya.ru" targetBlank>
+              <Button href="//example.com" targetBlank>
                 Link button
               </Button>
               <br />
               <br />
             </li>
             <li>
-              <Button href="//ya.ru" icon={CheckIcon} targetBlank>
+              <Button icon={CheckIcon}>
                 With icon
               </Button>
               <br />
               <br />
             </li>
             <li>
-              <Button href="//ya.ru" icon={CheckIcon} iconSize={40} targetBlank>
+              <Button icon={CheckIcon} iconSize={40}>
                 With custom sized icon
               </Button>
               <br />
@@ -142,23 +142,6 @@ class Home extends React.PureComponent {
           </Typography>
         </Section>
         <Section title="Section 2" color="brand">
-          <Typography variant="paragraph">
-            Contrary to&nbsp;popular belief, Lorem Ipsum is&nbsp;not simply random text. It&nbsp;has roots
-            in&nbsp;a&nbsp;piece of&nbsp;classical Latin literature from 45&nbsp;BC, making it&nbsp;over 2000 years old.
-            Richard McClintock, a&nbsp;Latin professor at&nbsp;Hampden-Sydney College in&nbsp;Virginia, looked
-            up&nbsp;one of&nbsp;the more obscure Latin words, consectetur, from a&nbsp;Lorem Ipsum passage, and going
-            through the cites of&nbsp;the word in&nbsp;classical literature, discovered the undoubtable source. Lorem
-            Ipsum comes from sections 1.10.32 and 1.10.33 of&nbsp;&laquo;de&nbsp;Finibus Bonorum et&nbsp;Malorum&raquo;
-            (The Extremes of&nbsp;Good and Evil) by Cicero, written in&nbsp;45&nbsp;BC. This book
-            is&nbsp;a&nbsp;treatise on&nbsp;the theory of&nbsp;ethics, very popular during the Renaissance. The first
-            line of&nbsp;Lorem Ipsum, &laquo;Lorem ipsum dolor sit amet..&raquo;, comes from a&nbsp;line in&nbsp;section
-            1.10.32. The standard chunk of&nbsp;Lorem Ipsum used since the 1500s is&nbsp;reproduced below for those
-            interested. Sections&nbsp;1.10.32 and 1.10.33 from &laquo;de&nbsp;Finibus Bonorum et&nbsp;Malorum&raquo;
-            by&nbsp;Cicero are also reproduced in&nbsp;their exact original form, accompanied by&nbsp;English versions
-            from the 1914 translation by&nbsp;H.&nbsp;Rackham.
-          </Typography>
-        </Section>
-        <Section title="Section without paddings">
           <Typography variant="paragraph">
             Contrary to&nbsp;popular belief, Lorem Ipsum is&nbsp;not simply random text. It&nbsp;has roots
             in&nbsp;a&nbsp;piece of&nbsp;classical Latin literature from 45&nbsp;BC, making it&nbsp;over 2000 years old.

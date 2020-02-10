@@ -68,11 +68,11 @@ module.exports = {
       ],
     },
     {
-      name: 'React Page',
+      name: 'Next Page',
       files: [
         {
-          from: './templates/react-page.js.tm',
-          to: './pages/${TM:URL}/index.js',
+          from: './templates/next-page.js.tm',
+          to: './pages/${TM:URL}.js',
         },
       ],
     },
