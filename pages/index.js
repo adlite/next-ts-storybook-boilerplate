@@ -87,9 +87,7 @@ class Home extends React.PureComponent {
               <br />
             </li>
             <li>
-              <Button icon={CheckIcon}>
-                With icon
-              </Button>
+              <Button icon={CheckIcon}>With icon</Button>
               <br />
               <br />
             </li>
