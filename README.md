@@ -2,15 +2,6 @@
 
 The cure for headaches in development projects on React + Next.js.
 
-## Structure
-1. [What’s Inside?](#inside)
-2. [Getting Started](#get-started)
-    - Environment
-    - Installing Dependencies
-    - Launch development version
-    - Launch production version
-    - Deploy updates
-
 ## <a name="inside">What’s Inside?</a>
 - [Next.js 9](https://nextjs.org/docs) as a platform
 - [SCSS](https://sass-lang.com/documentation)
