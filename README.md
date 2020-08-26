@@ -44,7 +44,7 @@ To initialize project you should install dependencies and copy the sample of env
 
 ..or just run:
 ```
-bash ./shell/init.sh
+bash shell/init.sh
 ```
 
 ### Launch development version
@@ -61,5 +61,5 @@ Then open `http://localhost:3000`.
 ### Deploy updates
 To deploy new releases on server simply run:
 ```
-bash ./shell/deploy.sh
+bash shell/deploy.sh
 ```
