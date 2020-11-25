@@ -1,6 +1,6 @@
 {
   "name": "next-js-boiler",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Next.js sparkling boiler for all types of projects",
   "main": "index.js",
   "scripts": {
