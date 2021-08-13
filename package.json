@@ -62,7 +62,7 @@
     "imagemin-webpack-plugin": "^2.4.2",
     "jest": "^24.9.0",
     "mkdirp": "^1.0.3",
-    "next": "9.3.2",
+    "next": "11.1.0",
     "node-sass": "4.13.1",
     "node-sass-json-importer": "^4.1.0",
     "nodemon": "^2.0.4",
