@@ -1,10 +1,13 @@
-// Internals
-const {aliases, sassSharedData, sassJsonImporter, reactSvgLoaderRule, cssoWebpackPlugin} = require('./webpack/shared');
+const {aliases, sassSharedData, reactSvgLoaderRule, cssoWebpackPlugin} = require('./webpack/shared');
 
-// Next config
+/**
+ * Next.js main config
+ * @see https://nextjs.org/docs/api-reference/next.config.js/introduction
+ * @type {import('next').NextConfig}
+ */
 module.exports = {
+  reactStrictMode: true,
   sassOptions: {
-    importer: sassJsonImporter(),
     additionalData: sassSharedData('next'),
   },
   webpack(config, {defaultLoaders}) {

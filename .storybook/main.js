@@ -2,7 +2,6 @@ const {
   aliases,
   sassSharedData,
   sassIncludePaths,
-  sassJsonImporter,
   reactSvgLoaderRule,
   cssoWebpackPlugin,
   svgExcludeRuleFromStorybookLoaders,
@@ -23,7 +22,6 @@ module.exports = {
         sassLoaderOptions: {
           additionalData: sassSharedData('storybook'),
           sassOptions: {
-            importer: sassJsonImporter(),
             includePaths: sassIncludePaths(),
           },
         },

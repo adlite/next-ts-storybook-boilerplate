@@ -1,5 +1,4 @@
 const path = require('path');
-const jsonImporter = require('node-sass-json-importer');
 const CssoWebpackPlugin = require('csso-webpack-plugin').default;
 
 /**
@@ -8,11 +7,6 @@ const CssoWebpackPlugin = require('csso-webpack-plugin').default;
 const aliases = () => ({
   '@': process.cwd(),
 });
-
-/**
- * @see https://www.npmjs.com/package/node-sass-json-importer
- */
-const sassJsonImporter = () => jsonImporter();
 
 /**
  * @see https://github.com/sass/node-sass#includepaths
@@ -193,7 +187,6 @@ const reactSvgLoaderRule = defaultBabelLoader => ({
 
 module.exports = {
   sassIncludePaths,
-  sassJsonImporter,
   sassSharedData,
   svgoConfig,
   svgExcludeRuleFromStorybookLoaders,
