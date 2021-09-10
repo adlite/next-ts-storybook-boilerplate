@@ -1,36 +1,30 @@
-// Vendor
-import React from 'react';
 import NextApp from 'next/app';
-import {Provider} from 'react-redux';
-// Internals
-import {withReduxStore} from 'hocs';
-// Styles
-import 'styles/vendor/normalize.scss';
-import 'styles/vendor/reset.scss';
-import 'styles/index.scss';
+import PropTypes from 'prop-types';
+import {Provider} from 'mobx-react';
 
-@withReduxStore
+import ExampleLayout from '@/components/ExampleLayout';
+import {withMobXStore} from '@/mobx';
+
+import '@/styles/base.scss';
+
 class App extends NextApp {
-  // Only uncomment this method if you have blocking data requirements for
-  // every single page in your application. This disables the ability to
-  // perform automatic static optimization, causing every page in your app to
-  // be server-side rendered.
-  //
-  // static async getInitialProps(appContext) {
-  //   // calls page's `getInitialProps` and fills `appProps.pageProps`
-  //   const appProps = await App.getInitialProps(appContext);
-  //
-  //   return { ...appProps }
-  // }
+  static propTypes = {
+    Component: PropTypes.elementType.isRequired,
+    pageProps: PropTypes.object.isRequired,
+    store: PropTypes.object.isRequired,
+  };
 
   render() {
-    const {Component, pageProps, reduxStore} = this.props;
+    const {Component, pageProps, store} = this.props;
+
     return (
-      <Provider store={reduxStore}>
-        <Component {...pageProps} />
+      <Provider store={store}>
+        <ExampleLayout>
+          <Component {...pageProps} />
+        </ExampleLayout>
       </Provider>
     );
   }
 }
 
-export default App;
+export default withMobXStore(App);

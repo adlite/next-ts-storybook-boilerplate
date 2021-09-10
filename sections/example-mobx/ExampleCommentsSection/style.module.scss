@@ -1,0 +1,39 @@
+.ExampleCommentsSection {
+  width: 980px;
+  margin: 0 auto 20px auto;
+  padding: 20px;
+  background-color: #e7f690;
+
+  .button {
+    margin-right: 10px;
+  }
+
+  .addCommentBox {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .addCommentInput {
+    flex: 1 1 0;
+  }
+
+  .addCommentButton {
+    margin-left: 10px;
+  }
+
+  .comment {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+
+  .commentBody {
+    padding-right: 10px;
+  }
+}

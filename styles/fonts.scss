@@ -1,0 +1,7 @@
+// Load fonts
+@include webfont(
+  $baseFont,
+  '#{$publicPath}/assets/fonts/Roboto-Regular.woff',
+  '#{$publicPath}/assets/fonts/Roboto-Regular.woff2',
+  $regular
+);

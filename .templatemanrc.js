@@ -13,15 +13,15 @@ module.exports = {
         },
         {
           from: './templates/style-file.scss.tm',
-          to: './components/${TM:COMPONENT_NAME}/style.scss',
+          to: './components/${TM:COMPONENT_NAME}/style.module.scss',
         },
         {
           from: './templates/export-module.js.tm',
           to: './components/${TM:COMPONENT_NAME}/index.js',
         },
         {
-          from: './templates/react-test-spec.js.tm',
-          to: './components/${TM:COMPONENT_NAME}/${TM:COMPONENT_NAME}.test.js',
+          from: './templates/storybook-stories.js.tm',
+          to: './components/${TM:COMPONENT_NAME}/${TM:COMPONENT_NAME}.stories.js',
         },
       ],
     },
@@ -34,53 +34,49 @@ module.exports = {
         },
         {
           from: './templates/style-file.scss.tm',
-          to: './components/${TM:COMPONENT_NAME}/style.scss',
+          to: './components/${TM:COMPONENT_NAME}/style.module.scss',
         },
         {
           from: './templates/export-module.js.tm',
           to: './components/${TM:COMPONENT_NAME}/index.js',
         },
         {
-          from: './templates/react-test-spec.js.tm',
-          to: './components/${TM:COMPONENT_NAME}/${TM:COMPONENT_NAME}.test.js',
+          from: './templates/storybook-stories.js.tm',
+          to: './components/${TM:COMPONENT_NAME}/${TM:COMPONENT_NAME}.stories.js',
         },
       ],
     },
     {
-      name: 'React Component Connected Class',
+      name: 'React Page',
       files: [
         {
-          from: './templates/react-connected-class.js.tm',
-          to: './components/${TM:COMPONENT_NAME}/${TM:COMPONENT_NAME}.js',
+          from: './templates/react-page.js.tm',
+          to: './pages/${TM:URL}/index.js',
+        },
+      ],
+    },
+    {
+      name: 'App Section',
+      files: [
+        {
+          from: './templates/export-module.js.tm',
+          to: './sections/${TM:PAGE_ROUTE}/${TM:COMPONENT_NAME}/index.js',
+        },
+        {
+          from: './templates/app-section.js.tm',
+          to: './sections/${TM:PAGE_ROUTE}/${TM:COMPONENT_NAME}/${TM:COMPONENT_NAME}.js',
         },
         {
           from: './templates/style-file.scss.tm',
-          to: './components/${TM:COMPONENT_NAME}/style.scss',
-        },
-        {
-          from: './templates/export-module.js.tm',
-          to: './components/${TM:COMPONENT_NAME}/index.js',
-        },
-        {
-          from: './templates/react-test-spec.js.tm',
-          to: './components/${TM:COMPONENT_NAME}/${TM:COMPONENT_NAME}.test.js',
+          to: './sections/${TM:PAGE_ROUTE}/${TM:COMPONENT_NAME}/style.module.scss',
         },
       ],
     },
     {
-      name: 'Next Page',
-      files: [
-        {
-          from: './templates/next-page.js.tm',
-          to: './pages/${TM:URL}.js',
-        },
-      ],
-    },
-    {
-      name: 'Redux Duck Module',
+      name: 'MobX State Tree Model',
       files: {
-        from: './templates/redux-duck.js.tm',
-        to: './store/modules/${TM:DUCK_NAME}.js',
+        from: './templates/mobx-state-tree-model.js.tm',
+        to: './store/models/${TM:MODEL_NAME}.js',
       },
     },
     {
@@ -98,17 +94,10 @@ module.exports = {
       },
     },
     {
-      name: 'React Component Connected Class (partial)',
+      name: 'Storybook Stories (partial)',
       files: {
-        from: './templates/react-connected-class.js.tm',
-        to: './components/${TM:PARENT_COMPONENT_NAME}/${TM:COMPONENT_NAME}.js',
-      },
-    },
-    {
-      name: 'React Test Spec',
-      files: {
-        from: './templates/react-test-spec.js.tm',
-        to: './components/${TM:PARENT_COMPONENT_NAME}/${TM:COMPONENT_NAME}.test.js',
+        from: './templates/storybook-stories.js.tm',
+        to: './components/${TM:PARENT_COMPONENT_NAME}/${TM:COMPONENT_NAME}.stories.js',
       },
     },
   ],

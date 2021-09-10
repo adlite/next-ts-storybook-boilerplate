@@ -1,0 +1,27 @@
+// Colors
+$primaryColor: #e21f26;
+$secondaryLightColor: #5d5de0;
+$secondaryColor: #4444ac;
+$bgPrimaryColor: #e1ebf3;
+$bgPrimaryTextColor: #201f25;
+$bgSecondaryColor: #000000;
+$bgSecondaryTextColor: #ffffff;
+
+// Fonts
+$baseFont: 'Roboto';
+$fallbackFont: 'Arial', 'Helvetica', sans-serif;
+$fontSize: 16px;
+$fontSizeSmaller: 14px;
+$lineHeight: 1.618; // based on https://medium.com/@zkareemz/golden-ratio-62b3b6d4282a
+
+// Font weights
+$light: 300;
+$regular: 400;
+$bold: 700;
+$extraBold: 800;
+
+// Sizes
+$headerHeight: 80px;
+
+// Durations
+$duration: 0.35s;

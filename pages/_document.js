@@ -1,19 +1,18 @@
-// _document is only rendered on the server side and not on the client side
-// Event handlers like onClick can't be added to this file
-// Vendor
-import React from 'react';
-import NextDocument, {Html, Head, Main, NextScript} from 'next/document';
+import Document, {Html, Head, Main, NextScript} from 'next/document';
 
-export default class Document extends NextDocument {
-  static async getInitialProps(ctx) {
-    const initialProps = await NextDocument.getInitialProps(ctx);
-    return {...initialProps};
-  }
-
+class MyDocument extends Document {
   render() {
     return (
-      <Html>
-        <Head />
+      <Html lang="en">
+        <Head>
+          <link rel="shortcut icon" href="/favicon.ico" />
+          <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+          <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+          <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+          <link rel="manifest" href="/site.webmanifest" />
+          <meta name="msapplication-TileColor" content="#da532c" />
+          <meta name="theme-color" content="#ffffff" />
+        </Head>
         <body>
           <Main />
           <NextScript />
@@ -22,3 +21,5 @@ export default class Document extends NextDocument {
     );
   }
 }
+
+export default MyDocument;

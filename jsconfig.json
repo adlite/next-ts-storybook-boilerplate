@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "*": ["./node_modules"],
+      "@/*": ["./*"]
+    }
+  },
+  "exclude": ["node_modules", ".next", "out", "build", ".idea", "dist", "storybook-static"]
+}

@@ -20,3 +20,34 @@ export const changeProtocol = (url, protocol = 'http') => {
 
   return `${protocol}://${url[0] === '/' ? url.slice(1) : url}`;
 };
+
+/**
+ * Concatenate absolute and relative link to one string
+ * @param baseLink {string}
+ * @param relativeLink {string}
+ * @return {string} - concatenated links
+ */
+export const concatLinks = (baseLink, relativeLink) => {
+  if (typeof baseLink !== 'string' || typeof relativeLink !== 'string') {
+    return '';
+  }
+
+  const baseLinkHasSlash = baseLink.slice(-1) === '/';
+  const relativeLinkHasSlash = relativeLink[0] === '/';
+  const concatedBaseLink = baseLink.slice(0, baseLink.length - 1);
+  const concatedRelativeLink = relativeLink.slice(1);
+
+  if (baseLinkHasSlash && relativeLinkHasSlash) {
+    return `${concatedBaseLink}/${concatedRelativeLink}`;
+  }
+
+  if (baseLinkHasSlash && !relativeLinkHasSlash) {
+    return `${concatedBaseLink}/${relativeLink}`;
+  }
+
+  if (!baseLinkHasSlash && relativeLinkHasSlash) {
+    return `${baseLink}/${concatedRelativeLink}`;
+  }
+
+  return `${baseLink}/${relativeLink}`;
+};

@@ -10,7 +10,8 @@ module.exports = {
     es6: true,
     node: true,
   },
-  extends: ['eslint:recommended', 'plugin:react/recommended', 'prettier'],
+  plugins: ['babel', 'react', 'import', 'jsx-a11y'],
+  extends: ['eslint:recommended', 'plugin:react/recommended', 'plugin:jsx-a11y/recommended', 'prettier'],
   globals: {
     Atomics: 'readonly',
     SharedArrayBuffer: 'readonly',
@@ -25,8 +26,8 @@ module.exports = {
     ecmaVersion: 2018,
     sourceType: 'module',
   },
-  plugins: ['babel', 'react', 'import'],
   rules: {
+    'react/react-in-jsx-scope': 0,
     'import/order': 2,
     'import/first': 2,
     'import/exports-last': 0,
@@ -46,6 +47,15 @@ module.exports = {
       2,
       {devDependencies: false, optionalDependencies: false, peerDependencies: false},
     ],
+    'jsx-a11y/anchor-is-valid': [
+      'error',
+      {
+        components: ['Link'],
+        aspects: ['invalidHref', 'preferButton'],
+      },
+    ],
+    eqeqeq: ['error', 'always'],
+    camelcase: 'error',
   },
   settings: {
     // eslint-plugin-react settings

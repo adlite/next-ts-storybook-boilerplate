@@ -1,9 +1,8 @@
-// Vendor
-import React, {PureComponent} from 'react';
+import {PureComponent} from 'react';
 import PropTypes from 'prop-types';
 import cn from 'classnames';
-// Internals
-import style from './style.scss';
+
+import style from './style.module.scss';
 
 export default class ${TM:COMPONENT_NAME} extends PureComponent {
   static defaultProps = {
