@@ -2,7 +2,7 @@ import Head from 'next/head';
 
 import ExampleIntroSection from '@/sections/home/ExampleIntroSection';
 
-function Index() {
+export default function Index(): JSX.Element {
   return (
     <>
       <Head>
@@ -12,5 +12,3 @@ function Index() {
     </>
   );
 }
-
-export default Index;

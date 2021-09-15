@@ -1,11 +1,15 @@
-import PropTypes from 'prop-types';
 import cn from 'classnames';
 import Link from 'next/link';
 
+import {PropsWithClassName} from '@/components/types';
 import ExampleLogo from '@/public/assets/icons/example-logo.svg';
 import style from './style.module.scss';
 
-function ExampleHeader({className, isLogoHidden}) {
+export interface Props extends PropsWithClassName {
+  isLogoHidden?: boolean;
+}
+
+export default function ExampleHeader({className = '', isLogoHidden = false}: Props): JSX.Element {
   return (
     <header className={cn(style.ExampleHeader, className)}>
       {isLogoHidden || (
@@ -18,15 +22,3 @@ function ExampleHeader({className, isLogoHidden}) {
     </header>
   );
 }
-
-ExampleHeader.defaultProps = {
-  className: '',
-  isLogoHidden: false,
-};
-
-ExampleHeader.propTypes = {
-  className: PropTypes.string,
-  isLogoHidden: PropTypes.bool,
-};
-
-export default ExampleHeader;

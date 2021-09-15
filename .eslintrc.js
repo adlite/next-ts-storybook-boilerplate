@@ -4,14 +4,21 @@
  * @see https://eslint.org/docs/rules/
  */
 module.exports = {
-  parser: 'babel-eslint',
+  parser: '@typescript-eslint/parser',
   env: {
     browser: true,
     es6: true,
     node: true,
   },
-  plugins: ['babel', 'react', 'import', 'jsx-a11y'],
-  extends: ['eslint:recommended', 'plugin:react/recommended', 'plugin:jsx-a11y/recommended', 'prettier'],
+  plugins: ['@typescript-eslint', 'babel', 'react', 'import', 'jsx-a11y'],
+  extends: [
+    'eslint:recommended',
+    'plugin:@typescript-eslint/eslint-recommended',
+    'plugin:@typescript-eslint/recommended',
+    'plugin:react/recommended',
+    'plugin:jsx-a11y/recommended',
+    'prettier',
+  ],
   globals: {
     Atomics: 'readonly',
     SharedArrayBuffer: 'readonly',
@@ -27,6 +34,7 @@ module.exports = {
     sourceType: 'module',
   },
   rules: {
+    '@typescript-eslint/no-empty-interface': 0,
     'react/react-in-jsx-scope': 0,
     'import/order': 2,
     'import/first': 2,

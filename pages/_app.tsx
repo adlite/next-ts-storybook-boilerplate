@@ -1,21 +1,13 @@
-import {AppProps as NextAppProps} from 'next/app';
-import {Provider} from 'mobx-react';
+import {AppProps} from 'next/app';
 
 import ExampleLayout from '@/components/ExampleLayout';
-import {withMobXStore} from '@/mobx';
 
 import '@/styles/base.scss';
 
-type AppProps = NextAppProps & {store: any};
-
-function App({Component, pageProps, store}: AppProps) {
+export default function App({Component, pageProps}: AppProps): JSX.Element {
   return (
-    <Provider store={store}>
-      <ExampleLayout>
-        <Component {...pageProps} />
-      </ExampleLayout>
-    </Provider>
+    <ExampleLayout>
+      <Component {...pageProps} />
+    </ExampleLayout>
   );
 }
-
-export default withMobXStore(App);

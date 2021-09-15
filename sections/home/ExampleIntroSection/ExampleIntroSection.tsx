@@ -1,9 +1,7 @@
-import Link from 'next/link';
-
 import ExampleIcon from '@/public/assets/icons/example-icon.svg';
 import style from './style.module.scss';
 
-function ExampleIntroSection() {
+export default function ExampleIntroSection(): JSX.Element {
   return (
     <div className={style.ExampleIntroSection}>
       <div className={style.container}>
@@ -12,9 +10,6 @@ function ExampleIntroSection() {
         </div>
         <h1 className={style.title}>Next.js Boilerplate</h1>
         <div className={style.linksWrapper}>
-          <Link href="/example-mobx">
-            <a>Example MobX Usage</a>
-          </Link>
           <a href="https://github.com/adlite/next-js-boiler" rel="noreferrer" target="_blank">
             Boilerplate Docs
           </a>
@@ -29,5 +24,3 @@ function ExampleIntroSection() {
     </div>
   );
 }
-
-export default ExampleIntroSection;
