@@ -4,13 +4,20 @@
  * @see https://eslint.org/docs/rules/
  */
 module.exports = {
-  parser: '@typescript-eslint/parser',
   env: {
     browser: true,
     es6: true,
     node: true,
   },
-  plugins: ['@typescript-eslint', 'babel', 'react', 'import', 'jsx-a11y'],
+  parser: '@typescript-eslint/parser',
+  parserOptions: {
+    sourceType: 'module',
+    ecmaFeatures: {
+      jsx: true,
+    },
+    warnOnUnsupportedTypeScriptVersion: true,
+  },
+  plugins: ['@typescript-eslint', 'react', 'import', 'jsx-a11y'],
   extends: [
     'eslint:recommended',
     'plugin:@typescript-eslint/eslint-recommended',
@@ -20,19 +27,18 @@ module.exports = {
     'prettier',
   ],
   globals: {
-    Atomics: 'readonly',
-    SharedArrayBuffer: 'readonly',
     it: 'readonly',
     expect: 'readonly',
     describe: 'readonly',
   },
-  parserOptions: {
-    ecmaFeatures: {
-      jsx: true,
+  overrides: [
+    {
+      files: ['**/*.js?(x)'],
+      rules: {
+        '@typescript-eslint/no-var-requires': 0,
+      },
     },
-    ecmaVersion: 2018,
-    sourceType: 'module',
-  },
+  ],
   rules: {
     '@typescript-eslint/no-empty-interface': 0,
     'react/react-in-jsx-scope': 0,

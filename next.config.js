@@ -10,6 +10,7 @@ module.exports = {
   sassOptions: {
     additionalData: sassSharedData('next'),
   },
+  webpack5: false,
   webpack(config, {defaultLoaders}) {
     // React SVG Loader
     config.module.rules.push(reactSvgLoaderRule(defaultLoaders.babel));
