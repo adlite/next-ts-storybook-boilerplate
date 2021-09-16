@@ -10,7 +10,7 @@ const {
 } = require('../webpack/shared');
 
 module.exports = {
-  stories: ['../**/*.stories.mdx', '../**/*.stories.@(js|jsx|ts|tsx)'],
+  stories: ['../**/*.stories.mdx', '../**/*.stories.@(js|jsx|ts|tsx|mdx)'],
   addons: [
     {
       name: '@storybook/addon-links',
