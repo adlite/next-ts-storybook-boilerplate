@@ -1,3 +1,5 @@
+const {sassJsonImporter} = require('../webpack/shared');
+
 const {
   aliases,
   sassSharedData,
@@ -23,6 +25,7 @@ module.exports = {
           additionalData: sassSharedData('storybook'),
           sassOptions: {
             includePaths: sassIncludePaths(),
+            importer: sassJsonImporter(),
           },
         },
       },

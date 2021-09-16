@@ -1,3 +1,4 @@
+import './next-js-adapter';
 import '@/styles/base.scss';
 import '@/styles/storybook.scss';
 

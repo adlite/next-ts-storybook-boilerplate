@@ -1,4 +1,4 @@
-const {aliases, sassSharedData, reactSvgLoaderRule, cssoWebpackPlugin} = require('./webpack/shared');
+const {aliases, sassSharedData, reactSvgLoaderRule, cssoWebpackPlugin, sassJsonImporter} = require('./webpack/shared');
 
 /**
  * Next.js main config
@@ -8,6 +8,7 @@ const {aliases, sassSharedData, reactSvgLoaderRule, cssoWebpackPlugin} = require
 module.exports = {
   reactStrictMode: true,
   sassOptions: {
+    importer: sassJsonImporter(),
     additionalData: sassSharedData('next'),
   },
   webpack5: false,
