@@ -1,4 +1,4 @@
-import {MakeFieldsOptional, MakeFieldsRequired} from '@/utils/types';
+import {MakeFieldsOptional, MakeFieldsRequired} from '~/utils/types';
 
 export type ApiRequestOptionsExecutor = 'fetch' | 'xhr';
 

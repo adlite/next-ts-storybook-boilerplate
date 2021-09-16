@@ -1,6 +1,6 @@
 import './next-js-adapter';
-import '@/styles/base.scss';
-import '@/styles/storybook.scss';
+import '~/styles/base.scss';
+import '~/styles/storybook.scss';
 
 export const parameters = {
   actions: {argTypesRegex: '^on[A-Z].*'},

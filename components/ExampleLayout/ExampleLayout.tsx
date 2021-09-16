@@ -1,7 +1,7 @@
 import cn from 'classnames';
 
-import {PropsWithChildren, PropsWithClassName} from '@/components/types';
-import ExampleHeader from '@/components/ExampleHeader';
+import {PropsWithChildren, PropsWithClassName} from '~/components/types';
+import ExampleHeader from '~/components/ExampleHeader';
 import style from './style.module.scss';
 
 export interface Props extends PropsWithClassName, PropsWithChildren {}

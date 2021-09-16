@@ -1,4 +1,4 @@
-import ExampleIcon from '@/public/assets/icons/example-icon.svg';
+import ExampleIcon from '~/public/assets/icons/example-icon.svg';
 import style from './style.module.scss';
 
 export default function ExampleIntroSection(): JSX.Element {

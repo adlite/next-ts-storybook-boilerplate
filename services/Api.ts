@@ -1,6 +1,6 @@
 import queryString from 'query-string';
 
-import {concatLinks} from '@/utils/url';
+import {concatLinks} from '~/utils/url';
 import {
   ApiHttpStatusCode,
   ApiHttpMethod,
@@ -12,8 +12,8 @@ import {
   ApiRequestOptionsConvertResponseDataXHR,
   ApiRequestOptionsDataObject,
   ApiStatusMessages,
-} from '@/services/types';
-import {isObject} from '@/utils/helpers';
+} from '~/services/types';
+import {isObject} from '~/utils/helpers';
 
 /**
  * Wrapper around fetch() for AJAX requests
