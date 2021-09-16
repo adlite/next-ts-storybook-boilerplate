@@ -6,7 +6,7 @@ const CssoWebpackPlugin = require('csso-webpack-plugin').default;
  * Aliases for Webpack alias resolver
  */
 const aliases = () => ({
-  '@': process.cwd(),
+  '~': process.cwd(),
 });
 
 /**

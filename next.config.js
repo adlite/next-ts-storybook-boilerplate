@@ -16,12 +16,6 @@ module.exports = {
     // React SVG Loader
     config.module.rules.push(reactSvgLoaderRule(defaultLoaders.babel));
 
-    // Aliases for paths to app directories
-    config.resolve.alias = {
-      ...config.resolve.alias,
-      ...aliases(),
-    };
-
     // CSS optimizations
     if (process.env.NODE_ENV !== 'development') {
       config.plugins.push(cssoWebpackPlugin());
