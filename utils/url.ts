@@ -2,18 +2,13 @@ const protocolRegExp = /^(?:[a-z]+:)?\/\//i;
 
 /**
  * Tests if passed string is an absolute URL
- * @param url {string}
- * @return {boolean}
  */
-export const isAbsolute = url => protocolRegExp.test(url);
+export const isAbsolute = (url: string): boolean => protocolRegExp.test(url);
 
 /**
  * Changes URL protocol
- * @param url {string}
- * @param protocol {string}
- * @return {string}
  */
-export const changeProtocol = (url, protocol = 'http') => {
+export const changeProtocol = (url: string, protocol: 'http' | 'https' = 'http'): string => {
   if (isAbsolute(url)) {
     return url.replace(protocolRegExp, `${protocol}://`);
   }
@@ -23,11 +18,8 @@ export const changeProtocol = (url, protocol = 'http') => {
 
 /**
  * Concatenate absolute and relative link to one string
- * @param baseLink {string}
- * @param relativeLink {string}
- * @return {string} - concatenated links
  */
-export const concatLinks = (baseLink, relativeLink) => {
+export const concatLinks = (baseLink: string, relativeLink: string): string => {
   if (typeof baseLink !== 'string' || typeof relativeLink !== 'string') {
     return '';
   }
