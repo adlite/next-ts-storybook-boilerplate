@@ -8,20 +8,20 @@ module.exports = {
       name: 'React Component Function',
       files: [
         {
-          from: './templates/react-func.js.tm',
-          to: './components/${TM:COMPONENT_NAME}/${TM:COMPONENT_NAME}.js',
+          from: './templates/react-func.tm',
+          to: './components/${TM:COMPONENT_NAME}/${TM:COMPONENT_NAME}.tsx',
         },
         {
           from: './templates/style-file.scss.tm',
           to: './components/${TM:COMPONENT_NAME}/style.module.scss',
         },
         {
-          from: './templates/export-module.js.tm',
-          to: './components/${TM:COMPONENT_NAME}/index.js',
+          from: './templates/export-module.tm',
+          to: './components/${TM:COMPONENT_NAME}/index.ts',
         },
         {
-          from: './templates/storybook-stories.js.tm',
-          to: './components/${TM:COMPONENT_NAME}/${TM:COMPONENT_NAME}.stories.js',
+          from: './templates/storybook-stories.tm',
+          to: './components/${TM:COMPONENT_NAME}/${TM:COMPONENT_NAME}.stories.tsx',
         },
       ],
     },
@@ -29,20 +29,20 @@ module.exports = {
       name: 'React Component Class',
       files: [
         {
-          from: './templates/react-class.js.tm',
-          to: './components/${TM:COMPONENT_NAME}/${TM:COMPONENT_NAME}.js',
+          from: './templates/react-class.tm',
+          to: './components/${TM:COMPONENT_NAME}/${TM:COMPONENT_NAME}.tsx',
         },
         {
           from: './templates/style-file.scss.tm',
           to: './components/${TM:COMPONENT_NAME}/style.module.scss',
         },
         {
-          from: './templates/export-module.js.tm',
-          to: './components/${TM:COMPONENT_NAME}/index.js',
+          from: './templates/export-module.tm',
+          to: './components/${TM:COMPONENT_NAME}/index.ts',
         },
         {
-          from: './templates/storybook-stories.js.tm',
-          to: './components/${TM:COMPONENT_NAME}/${TM:COMPONENT_NAME}.stories.js',
+          from: './templates/storybook-stories.tm',
+          to: './components/${TM:COMPONENT_NAME}/${TM:COMPONENT_NAME}.stories.tsx',
         },
       ],
     },
@@ -50,8 +50,8 @@ module.exports = {
       name: 'React Page',
       files: [
         {
-          from: './templates/react-page.js.tm',
-          to: './pages/${TM:URL}/index.js',
+          from: './templates/react-page.tm',
+          to: './pages/${TM:URL}/index.tsx',
         },
       ],
     },
@@ -59,12 +59,12 @@ module.exports = {
       name: 'App Section',
       files: [
         {
-          from: './templates/export-module.js.tm',
-          to: './sections/${TM:PAGE_ROUTE}/${TM:COMPONENT_NAME}/index.js',
+          from: './templates/export-module.tm',
+          to: './sections/${TM:PAGE_ROUTE}/${TM:COMPONENT_NAME}/index.ts',
         },
         {
-          from: './templates/app-section.js.tm',
-          to: './sections/${TM:PAGE_ROUTE}/${TM:COMPONENT_NAME}/${TM:COMPONENT_NAME}.js',
+          from: './templates/app-section.tm',
+          to: './sections/${TM:PAGE_ROUTE}/${TM:COMPONENT_NAME}/${TM:COMPONENT_NAME}.tsx',
         },
         {
           from: './templates/style-file.scss.tm',
@@ -73,31 +73,24 @@ module.exports = {
       ],
     },
     {
-      name: 'MobX State Tree Model',
-      files: {
-        from: './templates/mobx-state-tree-model.js.tm',
-        to: './store/models/${TM:MODEL_NAME}.js',
-      },
-    },
-    {
       name: 'React Component Function (partial)',
       files: {
-        from: './templates/react-func.js.tm',
-        to: './components/${TM:PARENT_COMPONENT_NAME}/${TM:COMPONENT_NAME}.js',
+        from: './templates/react-func.tm',
+        to: './components/${TM:PARENT_COMPONENT_NAME}/${TM:COMPONENT_NAME}.tsx',
       },
     },
     {
       name: 'React Component Class (partial)',
       files: {
-        from: './templates/react-class.js.tm',
-        to: './components/${TM:PARENT_COMPONENT_NAME}/${TM:COMPONENT_NAME}.js',
+        from: './templates/react-class.tm',
+        to: './components/${TM:PARENT_COMPONENT_NAME}/${TM:COMPONENT_NAME}.tsx',
       },
     },
     {
       name: 'Storybook Stories (partial)',
       files: {
-        from: './templates/storybook-stories.js.tm',
-        to: './components/${TM:PARENT_COMPONENT_NAME}/${TM:COMPONENT_NAME}.stories.js',
+        from: './templates/storybook-stories.tm',
+        to: './components/${TM:PARENT_COMPONENT_NAME}/${TM:COMPONENT_NAME}.stories.tsx',
       },
     },
   ],
