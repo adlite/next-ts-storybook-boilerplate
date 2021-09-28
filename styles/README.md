@@ -28,29 +28,13 @@ All breakpoints and mixins for media queries are configured in the file `/styles
 Each breakpoint is a maximum width from 0 to the specified value.
 For example, the breakpoint `tablet` would mean all devices up to 1024px.
 
-For example, let's say we want to create a media query for styles on mobile devices.
-
-Bro:
+For example, let's say we want to create a media query for styles on mobile devices:
 
 ```scss
 .selector {
   // Styles for the desktop
 
   @include onPhone() {
-    // Styles for the phone
-  }
-}
-```
-
-Not bro:
-
-```scss
-.selector {
-  // Styles for the desktop
-}
-
-@media all and (max-width: 767px) {
-  .selector {
     // Styles for the phone
   }
 }
