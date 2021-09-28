@@ -2,6 +2,8 @@
 
 The cure for headaches in development projects on Next.js with TypeScript and Storybook.
 
+![Intro image](./public/assets/images/example-intro.png)
+
 ## What’s Inside?
 
 - [Next.js 11](https://nextjs.org/)
