@@ -1,0 +1,34 @@
+@import 'vendor/reset';
+@import 'fonts';
+
+/*--------------------------------------------------------------
+# Global app styles
+--------------------------------------------------------------*/
+// Common styles
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  min-width: 320px;
+  min-height: 100%;
+  background: $bgPrimaryColor;
+  color: $bgPrimaryTextColor;
+  font: {
+    weight: $regular;
+    size: $fontSize;
+    family: $baseFont, $fallbackFont;
+  }
+  line-height: $lineHeight;
+  -webkit-text-size-adjust: 100%;
+}
+
+a {
+  @include link($secondaryColor, $secondaryLightColor);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}

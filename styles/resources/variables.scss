@@ -1,0 +1,18 @@
+// Fonts
+$baseFont: 'Roboto';
+$fallbackFont: 'Arial', 'Helvetica', sans-serif;
+$fontSize: 16px;
+$fontSizeSmaller: 14px;
+$lineHeight: 1.618; // based on https://medium.com/@zkareemz/golden-ratio-62b3b6d4282a
+
+// Font weights
+$light: 300;
+$regular: 400;
+$bold: 700;
+$extraBold: 800;
+
+// Sizes
+$headerHeight: 100px;
+
+// Durations
+$duration: 0.35s;

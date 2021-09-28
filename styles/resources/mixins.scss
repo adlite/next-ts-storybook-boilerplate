@@ -1,0 +1,93 @@
+// Outline
+@mixin outline {
+  &:focus:not(:focus-visible) {
+    outline: none;
+  }
+}
+
+// Accessible hiding
+@mixin visuallyHidden {
+  &:not(:focus):not(:active) {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+}
+
+// Placeholder color
+@mixin placeholder($color) {
+  &::placeholder {
+    color: $color;
+    opacity: 1;
+  }
+}
+
+// Font-face
+@mixin webfont($family, $woffPath, $woff2Path, $weight: normal, $style: normal) {
+  @font-face {
+    font-family: $family;
+    font-weight: $weight;
+    font-style: $style;
+    font-display: swap;
+    src: local($family), url($woffPath) format('woff'), url($woff2Path) format('woff2');
+  }
+}
+
+// Utils
+@mixin textOverflow {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+@mixin bg($position: 50% 50%) {
+  background-position: $position;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@mixin sub {
+  vertical-align: sub;
+  font-size: 60%;
+}
+
+@mixin sup {
+  vertical-align: super;
+  font-size: 60%;
+}
+
+// Typography
+@mixin addTextMargin($margin: 16px) {
+  margin-bottom: $margin;
+}
+
+@mixin typography($size, $fontWeight: normal, $hasMargin: false) {
+  font-size: $size;
+  font-weight: $fontWeight;
+
+  @if $hasMargin {
+    @include addTextMargin();
+  }
+}
+
+@mixin link($color, $activeColor) {
+  &,
+  &:hover,
+  &:active,
+  &:visited {
+    color: $color;
+    text-decoration: none;
+  }
+
+  &:active,
+  &:hover {
+    color: $activeColor;
+  }
+}

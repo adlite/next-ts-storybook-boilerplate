@@ -1,0 +1,17 @@
+.ExampleIntroSection {
+  text-align: center;
+  height: calc(100vh - #{$headerHeight});
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .container {
+    max-width: 400px;
+  }
+
+  .linksWrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+  }
+}

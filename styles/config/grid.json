@@ -1,8 +1,5 @@
 {
   "columnsCount": 12,
-  "gutterSize": 15,
-  "spread": "narrow",
-  "containerSpread": "narrow",
-  "containerMaxWidth": 1280,
-  "containerMinWidth": 320
+  "gutterSize": 32,
+  "containerMaxWidth": 1280
 }

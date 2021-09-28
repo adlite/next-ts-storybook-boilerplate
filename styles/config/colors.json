@@ -1,9 +1,14 @@
 {
-  "brandColor": "#09D3AC",
-  "brandColorDark": "#129c81",
-  "bgColor": "#FFF",
-  "textColor": "#1A1A1A",
-  "secondaryTextColor": "#848484",
-  "linkColor": "#4682b4",
-  "linkColorActive": "#2d516f"
+  "primaryColor": "#E21F26",
+
+  "secondaryLightColor": "#5D5DE0",
+  "secondaryColor": "#4444AC",
+
+  "bgPrimaryColor": "#E1EBF3",
+  "bgPrimaryTextColor": "#201F25",
+
+  "bgSecondaryColor": "#000000",
+  "bgSecondaryTextColor": "#FFFFFF",
+
+  "borderPrimaryColor": "#E6E6E6"
 }
