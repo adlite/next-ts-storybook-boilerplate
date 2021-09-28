@@ -22,7 +22,7 @@ The cure for headaches in development projects on Next.js.
 
 Prerequisites:
 
-- Node.js v12.x.x+
+- Node v14.x.x+
 - Npm v6.x.x+
 
 ### Installing dependencies

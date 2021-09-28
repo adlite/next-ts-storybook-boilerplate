@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "author": "Adlite <adlite.it@gmail.com> (https://github.com/adlite)",
   "engines": {
-    "node": ">=14.17.x",
-    "npm": ">=6.14.x"
+    "node": ">=14.x.x",
+    "npm": ">=6.x.x"
   },
   "repository": {
     "type": "git",
