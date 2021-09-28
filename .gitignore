@@ -95,3 +95,7 @@ dist
 
 # Storybook export folder
 storybook-static
+
+# stylelint cache
+.stylelintcache
+
