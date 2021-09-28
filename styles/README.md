@@ -1,6 +1,6 @@
 # STYLES
 
-## Directory structure
+#### Directory structure
 
 ```
 ./styles
@@ -18,6 +18,9 @@
 - `/styles/base.scss` - general styles for the whole application (i.e. `body`, `a` or `html`)
 - `/styles/fonts.scss` - font connections
 - `/styles/storybook.scss` - Storybook overrides
+
+#### Variables and mixins auto imports
+You don't have to directly import variables and mixins into each component's stylesheet. They are all preconfigured in Sass options. Just use it!
 
 #### Media queries
 
