@@ -29,11 +29,6 @@
   }
 }
 
-// Faster transition
-@mixin faster {
-  transition-duration: ($duration / 2);
-}
-
 // Font-face
 @mixin webfont($family, $woffPath, $woff2Path, $weight: normal, $style: normal) {
   @font-face {
@@ -43,18 +38,6 @@
     font-display: swap;
     src: local($family), url($woffPath) format('woff'), url($woff2Path) format('woff2');
   }
-}
-
-// Cursor grab
-@mixin cursorGrab {
-  cursor: move;
-  cursor: grab;
-}
-
-// Cursor grabbing
-@mixin cursorGrabbing {
-  cursor: move;
-  cursor: grabbing;
 }
 
 // Utils
