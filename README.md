@@ -1,6 +1,4 @@
-# Next.js boilerplate for big and scalable projects
-
-The cure for headaches in development projects on Next.js with TypeScript and Storybook.
+# Next.js boilerplate with TypeScript and Storybook integration
 
 ![Intro image](./public/assets/images/example-intro.png)
 
