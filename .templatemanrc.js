@@ -47,28 +47,55 @@ module.exports = {
       ],
     },
     {
-      name: 'React Page',
+      name: 'Next Page',
       files: [
         {
-          from: './templates/react-page.tm',
-          to: './pages/${TM:URL}/index.tsx',
+          from: './templates/next-page.tm',
+          to: './pages/${TM:URL}.tsx',
         },
       ],
     },
     {
-      name: 'App Section',
+      name: 'Next Page with SSG',
+      files: [
+        {
+          from: './templates/next-page-ssg.tm',
+          to: './pages/${TM:URL}.tsx',
+        },
+      ],
+    },
+    {
+      name: 'Next Page with SSR',
+      files: [
+        {
+          from: './templates/next-page-ssr.tm',
+          to: './pages/${TM:URL}.tsx',
+        },
+      ],
+    },
+    {
+      name: 'React Section',
       files: [
         {
           from: './templates/export-module.tm',
           to: './sections/${TM:PAGE_ROUTE}/${TM:COMPONENT_NAME}/index.ts',
         },
         {
-          from: './templates/app-section.tm',
+          from: './templates/react-section.tm',
           to: './sections/${TM:PAGE_ROUTE}/${TM:COMPONENT_NAME}/${TM:COMPONENT_NAME}.tsx',
         },
         {
           from: './templates/style-file.scss.tm',
           to: './sections/${TM:PAGE_ROUTE}/${TM:COMPONENT_NAME}/style.module.scss',
+        },
+      ],
+    },
+    {
+      name: 'Next API route',
+      files: [
+        {
+          from: './templates/next-api-route.tm',
+          to: './pages/api/${TM:URL}.tsx',
         },
       ],
     },

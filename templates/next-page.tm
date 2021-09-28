@@ -1,6 +1,6 @@
 import Head from 'next/head'
 
-export default function ${TM:COMPONENT_NAME}(): JSX.Element {
+export default function ${TM:COMPONENT_NAME}() {
   return (
     <>
       <Head>

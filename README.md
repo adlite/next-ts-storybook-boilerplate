@@ -6,7 +6,6 @@ The cure for headaches in development projects on Next.js.
 
 - [Next.js 11](https://nextjs.org/) as a framework
 - [Storybook 6](https://storybook.js.org/) for developing UI components in isolation (configuration does not conflict with Next.js)
-- [MobX](https://mobx.js.org/) and [MobX State Tree](https://mobx-state-tree.js.org/) for application state management
 - [SCSS](https://sass-lang.com/documentation) with [CSS Modules](https://github.com/css-modules/css-modules)
 - [ESLint](https://eslint.org/) with [import](https://www.npmjs.com/package/eslint-plugin-import) and [jsx-a11y](https://www.npmjs.com/package/eslint-plugin-import) plugins
 - [Stylelint](https://stylelint.io/user-guide) with [SCSS](https://www.npmjs.com/package/stylelint-scss) and [Prettier](https://www.npmjs.com/package/stylelint-prettier) integration
