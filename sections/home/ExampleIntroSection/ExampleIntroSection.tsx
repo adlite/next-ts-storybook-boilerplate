@@ -1,4 +1,5 @@
-import ExampleIcon from '~/public/assets/icons/example-icon.svg';
+import Image from 'next/image';
+
 import style from './style.module.scss';
 
 export default function ExampleIntroSection(): JSX.Element {
@@ -6,7 +7,7 @@ export default function ExampleIntroSection(): JSX.Element {
     <div className={style.ExampleIntroSection}>
       <div className={style.container}>
         <div>
-          <ExampleIcon />
+          <Image src="/assets/icons/example-icon.svg" width={121} height={121} alt="Example icon" />
         </div>
         <h1 className={style.title}>Next.js Boilerplate</h1>
         <div className={style.linksWrapper}>

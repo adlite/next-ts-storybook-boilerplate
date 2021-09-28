@@ -1,8 +1,8 @@
-import cn from 'classnames';
 import Link from 'next/link';
+import Image from 'next/image';
+import cn from 'classnames';
 
 import {PropsWithClassName} from '~/components/types';
-import ExampleLogo from '~/public/assets/icons/example-logo.svg';
 import style from './style.module.scss';
 
 export interface Props extends PropsWithClassName {
@@ -15,7 +15,7 @@ export default function ExampleHeader({className = '', isLogoHidden = false}: Pr
       {isLogoHidden || (
         <Link href="/" passHref>
           <a>
-            <ExampleLogo className={style.logo} />
+            <Image src="/assets/icons/example-logo.svg" width={192} height={57} alt="Logo" />
           </a>
         </Link>
       )}

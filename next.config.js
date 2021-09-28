@@ -1,4 +1,4 @@
-const {aliases, sassSharedData, reactSvgLoaderRule, cssoWebpackPlugin, sassJsonImporter} = require('./webpack/shared');
+const {sassSharedData, sassJsonImporter} = require('./webpack/shared');
 
 /**
  * Next.js main config
@@ -11,16 +11,5 @@ module.exports = {
     importer: sassJsonImporter(),
     additionalData: sassSharedData('next'),
   },
-  webpack5: false,
-  webpack(config, {defaultLoaders}) {
-    // React SVG Loader
-    config.module.rules.push(reactSvgLoaderRule(defaultLoaders.babel));
-
-    // CSS optimizations
-    if (process.env.NODE_ENV !== 'development') {
-      config.plugins.push(cssoWebpackPlugin());
-    }
-
-    return config;
-  },
+  webpack5: false, // disable Webpack 5 due to node-sass-json-importer incompatibility
 };
