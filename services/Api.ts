@@ -1,6 +1,5 @@
 import queryString from 'query-string';
 
-import {concatLinks} from '~/utils/url';
 import {
   ApiHttpStatusCode,
   ApiHttpMethod,
@@ -13,6 +12,7 @@ import {
   ApiRequestOptionsDataObject,
   ApiStatusMessages,
 } from '~/services/types';
+import {concatLinks} from '~/utils/url';
 import {isObject} from '~/utils/helpers';
 
 /**
