@@ -15,7 +15,7 @@ export default function ExampleHeader({className = '', isLogoHidden = false}: Pr
       {isLogoHidden || (
         <Link href="/" passHref>
           <a>
-            <Image src="/assets/icons/example-logo.svg" width={192} height={57} alt="Logo" />
+            <Image src="/assets/vector/example-logo.svg" width={192} height={57} alt="Logo" />
           </a>
         </Link>
       )}

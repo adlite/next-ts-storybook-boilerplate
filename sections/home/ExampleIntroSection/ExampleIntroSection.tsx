@@ -6,10 +6,7 @@ export default function ExampleIntroSection(): JSX.Element {
   return (
     <div className={style.ExampleIntroSection}>
       <div className={style.container}>
-        <div>
-          <Image src="/assets/icons/example-icon.svg" width={121} height={121} alt="Example icon" />
-        </div>
-        <h1 className={style.title}>Next.js Boilerplate</h1>
+        <Image src="/assets/images/example-intro.png" width={400} height={79} alt="Example icon" />
         <div className={style.linksWrapper}>
           <a href="https://github.com/adlite/next-js-boiler" rel="noreferrer" target="_blank">
             Boilerplate Docs
