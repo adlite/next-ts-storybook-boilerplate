@@ -1,11 +1,12 @@
 .ExampleIntroSection {
-  padding: 150px;
   text-align: center;
+  height: calc(100vh - #{$headerHeight});
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   .container {
-    margin: 0 auto;
-    padding: 0 20px;
-    max-width: 660px;
+    max-width: 400px;
   }
 
   .title {

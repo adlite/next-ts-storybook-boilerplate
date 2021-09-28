@@ -1,10 +1,16 @@
+$bgColor: rgba(255, 255, 255, 0.7);
+
 .ExampleHeader {
+  position: fixed;
+  left: 0;
+  top: 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: $bgSecondaryColor;
+  width: 100%;
   min-height: $headerHeight;
-  box-shadow: 0 2px 4px 0 rgb(0 0 0 / 50%);
+  background-color: $bgColor;
+  backdrop-filter: saturate(180%) blur(10px);
 }
 
 .logo {

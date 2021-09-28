@@ -8,5 +8,7 @@
   "bgPrimaryTextColor": "#201F25",
 
   "bgSecondaryColor": "#000000",
-  "bgSecondaryTextColor": "#FFFFFF"
+  "bgSecondaryTextColor": "#FFFFFF",
+
+  "borderPrimaryColor": "#E6E6E6"
 }

@@ -3,6 +3,6 @@
 }
 
 .main {
-  padding-top: 30px;
-  min-height: calc(100vh - #{$headerHeight});
+  padding-top: $headerHeight;
+  min-height: 100vh;
 }
